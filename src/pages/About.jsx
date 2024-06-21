@@ -18,14 +18,14 @@ const About = () => {
         </span>
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-900">
+      <div className="mt-5 flex flex-col gap-3 text-slate-900 font-semibold">
         <p>Jr. Web Developer from Santoña (Spain), with a focus on Backend.</p>
       </div>
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
 
-        <div className="mt-16 flex flex-wrap gap-12">
+        <div className="mt-16 flex flex-wrap gap-12 ">
           {skills.map((skill) => (
             <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-back rounded-xl bg-slate-400" />
@@ -33,7 +33,7 @@ const About = () => {
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
+                  className="w-1/2 h-1/2 object-contain "
                 />
               </div>
             </div>
@@ -42,7 +42,7 @@ const About = () => {
       </div>
       <div className="py-16">
         <h3 className="subhead-text">Work Experience.</h3>
-        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <div className="mt-5 flex flex-col gap-3  text-slate-900 font-semibold">
           <p>
             I've worked with all sorts of companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:
@@ -77,7 +77,7 @@ const About = () => {
                     {experience.title}
                   </h3>
                   <p
-                    className="text-black-500 font-medium text-base"
+                    className="text-black-500 font-medium text-base "
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
@@ -87,8 +87,8 @@ const About = () => {
                 <ul className="my-5 list-disc ml-5 space-y-2">
                   {experience.points.map((point, index) => (
                     <li
-                      key={`experience-point-${index}`}
-                      className="text-black-950 font-normal pl-1 text-sm"
+                      key={`experience-point-${index} `}
+                      className="text-black-950  pl-1 text-sm text-slate-900 font-semibold"
                     >
                       {point}
                     </li>
