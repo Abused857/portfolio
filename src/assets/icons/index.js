@@ -20,7 +20,7 @@ import atlassian from './atlassian.svg'
 import bitbucket from './bitbucket.svg'
 import laravel from './laravel.svg'
 import spring from './spring.svg'
-import contact from './contact.svg'
+
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
@@ -47,7 +47,7 @@ export {
    
    
     arrow,
-    contact,
+
     soundon,
     soundoff
 }

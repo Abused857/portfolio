@@ -102,27 +102,28 @@ export function Island({
       islandRef.current.rotation.y += rotationSpeed.current;
     } else {
       const rotation = islandRef.current.rotation.y;
-
+    
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-
+    
       switch (true) {
-        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-          setCurrentStage(4);
+        case normalizedRotation >= 0 && normalizedRotation < Math.PI / 2:
+          setCurrentStage(1);
           break;
-        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-          setCurrentStage(3);
-          break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= Math.PI / 2 && normalizedRotation < Math.PI:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-          setCurrentStage(1);
+        case normalizedRotation >= Math.PI && normalizedRotation < 1.5 * Math.PI:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 1.5 * Math.PI && normalizedRotation < 2 * Math.PI:
+          setCurrentStage(4);
           break;
         default:
           setCurrentStage(null);
       }
     }
+    
   });
 
   return (
