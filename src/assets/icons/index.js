@@ -15,6 +15,7 @@ import twitter from './twitter.svg'
 
 
 import arrow from './arrow.svg'
+import python from './python.svg'
 import java from './java.svg'
 import atlassian from './atlassian.svg'
 import bitbucket from './bitbucket.svg'
@@ -35,6 +36,7 @@ export {
     github,
     html,
     javascript,
+    python,
  
 
  

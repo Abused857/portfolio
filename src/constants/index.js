@@ -4,7 +4,7 @@ import {
     
     css,
  
-   
+   python,
     git,
     github,
     html,
@@ -32,6 +32,11 @@ export const skills = [
     {
         imageUrl: laravel,
         name: "Laravel",
+        type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
         type: "Backend",
     },
     {
@@ -84,6 +89,18 @@ export const experiences = [
             "API testing with Postman.",
             "Communication, support  and mutual assistance among members.",
             "Bitbucket version control and Jira proyect manager.",
+        ],
+    },
+
+    {
+        title: "IT consultant at incentro",
+        company_name: "Incentro",
+        icon: incentro,
+        iconBg: "#005544",
+        date: "July 2024 - Present",
+        points: [
+            "Maintaining legacy code.",
+            "Developing internal projects",
         ],
     },
  
